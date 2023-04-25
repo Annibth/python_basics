@@ -46,8 +46,10 @@ $ python3
   + Navigation in korrektes Verzeichnis
   + Kommandozeilenbefehl:
   ```zsh
-  $ python3 *datei_name.py* 
+  $ python3 datei_name.py 
   ```
+
+  *datei_name durch Namen der auszuführenden Datei ersetzen*
 
 ## Syntax
 
