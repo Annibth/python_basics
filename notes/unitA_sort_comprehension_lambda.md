@@ -15,7 +15,7 @@
   - ***sort(key =*** *function* ***)***
   - 
 ```py
-my_my_list = ["Apfel", "Banane", "Kiwi", "Wassermelone", "mango"]
+my_list = ["Apfel", "Banane", "Kiwi", "Wassermelone", "mango"]
 
 #alphabetische Sortierung
 my_list.sort()
@@ -26,7 +26,7 @@ my_list.sort(reverse = True)
 #Funktion, anhand der sortiert werden soll
 def sort_func(s):
   if s[0] == "A":
-    return 0
+    return ""
   else:
     return s
 
@@ -48,7 +48,7 @@ old_list = ["Apfel", "Banane", "Kiwi", "Wassermelone", "mango"]
 new_list = list()
 for x in old_list:
     if x[0].isupper():
-        new_list.append
+        new_list.append(x + "!")
 ```
 
 wird zu:
@@ -63,8 +63,8 @@ new_list = [x+"!" for x in old_list if x[0].isupper()]
 - anonyme Funktion
   - keinen Namen
   - temporär
-- beliebig viele ARgumente aber nur einen Rückgabewert
-- Verwendung
+- beliebig viele Argumente aber nur einen Rückgabewert
+- Verwendung:
   - Funktionen höherer Ordnung
     - Funktionen, die Funktionen als Argumente erhalten
     - zB: map(), filter(), fold(),sort(),...
@@ -72,12 +72,12 @@ new_list = [x+"!" for x in old_list if x[0].isupper()]
   - ...
 
 ```py
-#die Funktion gibt immer der Wert einer ZAhl um zwei vergrößert zurück
+#die Funktion gibt immer der Wert einer Zahl um zwei vergrößert zurück
 lambda a: a+2
 
 my_list.sort(key = lambda a: a[len(a)-1] )
 
-new_list = [lambda x: x+"!" for x in my_list if x[0].isupper]
+new_list = [(lambda x: x+"!")(x) for x in my_list if x[0].isupper]
 ```
 
 ### map()
@@ -133,6 +133,6 @@ print(list2)
 import functools 
 
 list1 = [2,3,4,5]
-value = functools.reduce(lambda a: a%2 == 0, list1)
+value = functools.reduce(lambda a,b: a+b == 1, list1)
 print(list2)
 ```
