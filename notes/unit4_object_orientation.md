@@ -8,8 +8,8 @@
     - Zusammenspiel von Objekten
     - dementsprechende Architektur der Software
 
-Beispiel:
-
+*Beispiel:
+Im Straßenverkehr agieren (mehr oder weniger kooperativ) Autos, Fahrradfahrer und Fußgänger miteinander. Diese bilden sogenannte Klassen und haben bestimmte Attribute und Funktionen. Die Klasse Auto hat  die Attribute Farbe und Marke und die Funktionalitäten Fahren oder Bremsen, Blinken oder weitere. Der Fußgänger hat hingegen die Attribute Alter, Schuhgröße und Haarfarbe und die Verhaltenweisen Gehen und Reden.
 
 ## Konzepte der Objektorientierung
 
@@ -27,6 +27,7 @@ Beispiel:
   - legt Attribute fest, die eine Instanz dieser Klasse hat
 
 Definition:
+
 ```py
 class ClassName: 
     def __init__(self, attribute1, attribute2):
@@ -83,4 +84,16 @@ class A:
         self.attributB = attributB
 ```
 
-### Vererbung
+----
+
+## Aufgaben
+
+1. Definiere eine Klasse "Bankkonto". Diese Klasse soll folgende Funktionalitäten erfüllen:
+  + bei der Initialisierung eines Accounts soll jeweils Vorname, Nachname und initiales Vermögen eines Anlegers spezifiziert werden können 
+  + es soll Funktionen geben, welche den Namen des Kontoinhabers sowie den aktuellen Kontostand zurückgeben
+  + es soll Funktionen für mögliche Transaktionen (Ein- und Auszahlung) geben, dabei sollte stets geprüft und zurückgegeben werden, ob eine Transaktion gültig ist:
+    + ein negativer Kontostand darf nie entstehen
+    + ab Einzahlungen von mehr als 15000 Geldeinheiten erhebt die Bank einen Bearbeitungszins von 1%, dieser soll vom Transaktionsbetrag abgezogen werden
+    + nichtpositive Einzahlungen sollen einen Error werfen
+  + das Konto soll auf Wunsch aktiviert und deaktiviert werden können
+  + wenn man einen print() auf ein Bankkonto-Objekt aufruft soll folgende Ausgabe erscheinen: "Das ist das Bankkonto von {Vorname} {Nachname}."
