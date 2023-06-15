@@ -148,7 +148,9 @@ print(list2)
   + sortiere die Strings nach der alphabetischen Reihenfolge des mittleren Buchstabens
   + sortiere die Strings nach der Reihenfolge ihrer Hashwerte, nutzte dabei die hash(s:str) -> int Funktion um den Hash zu berechnen
 
-2. Lege eine Liste von Paaren an, wobei jedes Paar aus zwei Zahlenwerten bestehen soll. Sortiere die Liste absteigend nach den Zahlenwerten des zweiten Tupeleintrags. 
+2. Lege eine Liste von Paaren an, wobei jedes Paar aus zwei Zahlenwerten bestehen soll. 
+- Sortiere die Liste absteigend nach den Zahlenwerten des zweiten Tupeleintrags.
+-  Sortiere die Liste aufsteigend nach der Summe der beiden Tupeleinträge.
 
 3. Erstelle dir zunächst eine Liste von Personen. Jede Person wird durch ein Tupel repräsentiert, welches Name (String), Alter(Integer) und den Besitz eines Haustiers (bool) enthält.
   - erstelle dir eine neue Liste, die alle volljährigen Personen beinhaltet.
