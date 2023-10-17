@@ -1,5 +1,7 @@
 # Add-Ons
 
+Die Themen können als Lückenfüller eingeschoben und behandelt werden, wenn es sich bspw nicht lohnt, ein neues Thema zu beginnen oder für den letzten Termin.
+Andererseits können sie auch für tiefgründigeres v´Verständnis behandelt werden.
 
 ## List-Sort
 
